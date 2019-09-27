@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3R3-aO-Cly">
-    <device id="retina6_1" orientation="portrait">
+    <device id="retina6_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -18,14 +18,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="zvx-gL-QTR">
-                                <rect key="frame" x="32" y="246" width="350" height="490"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="490" id="G4Y-9t-37y"/>
-                                </constraints>
-                                <color key="sectionIndexBackgroundColor" red="1" green="0.2293613092" blue="0.90532261550000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                            </tableView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add an item" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dcL-QS-Odo">
                                 <rect key="frame" x="95" y="140" width="224" height="28"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
@@ -41,6 +33,14 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="zvx-gL-QTR">
+                                <rect key="frame" x="32" y="252" width="350" height="490"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="490" id="G4Y-9t-37y"/>
+                                </constraints>
+                                <color key="sectionIndexBackgroundColor" red="1" green="0.2293613092" blue="0.90532261550000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.28216097625628489" blue="0.59022872264544524" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
@@ -55,7 +55,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="QRp-L2-d6L"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Edit" image="icons8-add-list-30" id="Ehp-lU-DZ0"/>
+                    <tabBarItem key="tabBarItem" title="Edit" image="icons8-add-list-30" id="Ehp-lU-DZ0">
+                        <color key="badgeColor" red="0.18400940939999999" green="1" blue="0.051704406199999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </tabBarItem>
                     <navigationItem key="navigationItem" id="FAE-Fo-79L"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yQg-UJ-P4o" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -94,7 +96,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="45E-qc-2D8"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="View" image="icons8-view-30" id="zG1-ka-olk"/>
+                    <tabBarItem key="tabBarItem" title="View" image="icons8-view-30" id="zG1-ka-olk">
+                        <color key="badgeColor" red="1" green="0.98800037299999999" blue="0.28470721960000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </tabBarItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="A18-PA-ldQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -118,6 +122,9 @@
                                 <state key="normal" title="Create">
                                     <color key="titleColor" red="1" green="0.2293613091880975" blue="0.90532261549802262" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
+                                <connections>
+                                    <action selector="listCreate:" destination="36y-2t-5RQ" eventType="touchUpInside" id="O1t-pn-zPx"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Name your list" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Czt-B3-eAY">
                                 <rect key="frame" x="136" y="139" width="142" height="32"/>
@@ -136,6 +143,9 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="listNameChanged:" destination="36y-2t-5RQ" eventType="editingChanged" id="teE-W4-dQZ"/>
+                                </connections>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" red="0.98918385930632502" green="1" blue="0.055373590668698403" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -150,7 +160,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Jbr-nv-TbI"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Create" image="icons8-create-30" id="XJj-Ae-Vvq"/>
+                    <tabBarItem key="tabBarItem" title="Create" image="icons8-create-30" id="XJj-Ae-Vvq">
+                        <color key="badgeColor" red="1" green="0.2293613092" blue="0.90532261550000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </tabBarItem>
+                    <connections>
+                        <outlet property="createButton" destination="dQ4-Xm-7Eo" id="E1s-kn-GbP"/>
+                        <outlet property="listName" destination="l7Q-55-ofn" id="2b8-vE-hd8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JJV-tJ-TF3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -160,12 +176,12 @@
         <scene sceneID="tZq-cX-Bc0">
             <objects>
                 <tabBarController id="3R3-aO-Cly" sceneMemberID="viewController">
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="v30-Jx-YdA">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <color key="barTintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <color key="selectedImageTintColor" cocoaTouchSystemColor="lightTextColor"/>
+                        <color key="selectedImageTintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
                         <segue destination="36y-2t-5RQ" kind="relationship" relationship="viewControllers" id="fj2-ju-YaX"/>

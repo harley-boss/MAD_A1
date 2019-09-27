@@ -33,6 +33,13 @@ class List {
         }
     }
     
+    // Removes an item based on its index
+    public func removeItem(_ itemIndex : Int) {
+        if itemIndex <= listItems.count {
+            listItems.remove(at: itemIndex)
+        }
+    }
+    
     // Get all items in the list
     public func getAllItems() -> [String] {
         return listItems

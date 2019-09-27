@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "CreateListController.listCreate(_:):CreateList.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "print(listName.text)">
+            </PersistentString>
+            <PersistentString
+               value = "sender">
+            </PersistentString>
+            <PersistentString
+               value = "listName">
+            </PersistentString>
+            <PersistentString
+               value = "listName.text">
+            </PersistentString>
+            <PersistentString
+               value = "listName.text != &quot;&quot;">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "CreateListController.listNameChanged(_:):CreateList.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "listName.text">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

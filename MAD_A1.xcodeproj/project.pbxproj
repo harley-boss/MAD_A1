@@ -64,10 +64,10 @@
 			children = (
 				D6FE2E38233A97BF0042BAA7 /* AppDelegate.swift */,
 				D6FE2E3C233A97BF0042BAA7 /* Main.storyboard */,
+				D6BCD790233E41CB00BE05EF /* icons8-list-64.png */,
 				D6FE2E3F233A97C00042BAA7 /* Assets.xcassets */,
 				D6FE2E41233A97C00042BAA7 /* LaunchScreen.storyboard */,
 				D6FE2E44233A97C00042BAA7 /* Info.plist */,
-				D6BCD790233E41CB00BE05EF /* icons8-list-64.png */,
 				D6FE2E4C233AD51A0042BAA7 /* List.swift */,
 				D6FE2E4A233AD5040042BAA7 /* CreateList.swift */,
 				D6BCD78C233E3F4200BE05EF /* EditList.swift */,

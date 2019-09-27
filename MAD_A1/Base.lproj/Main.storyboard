@@ -103,8 +103,8 @@
         <!--Create-->
         <scene sceneID="QsH-uI-iSi">
             <objects>
-                <viewController id="36y-2t-5RQ" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="HzJ-zh-IF0">
+                <viewController id="36y-2t-5RQ" customClass="CreateListController" customModule="MAD_A1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HzJ-zh-IF0" customClass="CreateList">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>

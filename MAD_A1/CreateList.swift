@@ -19,7 +19,6 @@ class CreateListController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-       // create.addTarget(self, action: Selector(("buttonClicked:")), for: .touchDown)
     }
     
     @IBAction func createClicked(_ sender: Any) {
@@ -31,7 +30,6 @@ class CreateListController: UIViewController {
     
     @IBAction func listNameChanged(_ sender: UITextField) {
         // Ensure that the string isn't empty any maybe at least 3 chars?
-       // create.isEnabled = true
     }
     
     @IBAction func listCreate(_ sender: Any) {

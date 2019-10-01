@@ -1,5 +1,5 @@
 //
-//  ListItem.swift
+//  GroceryList.swift
 //  MAD_A1
 //
 //  Created by Harley Boss on 2019-09-24.
@@ -10,10 +10,15 @@ import Foundation
 
 // This class represents a list item entry
 
-class List {
+class GroceryList {
     
     var id: Int = 0
+    var listName: String = ""
     var listItems = [String]()
+    
+    init (_ listName : String) {
+        self.listName = listName
+    }
     
     // Add an item to the list
     public func addItem(_ itemName : String) {
@@ -38,6 +43,10 @@ class List {
         if itemIndex <= listItems.count {
             listItems.remove(at: itemIndex)
         }
+    }
+    
+    public func getListName() -> String {
+        return listName
     }
     
     // Get all items in the list

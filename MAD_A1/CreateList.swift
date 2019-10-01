@@ -12,20 +12,21 @@ import UIKit
 class CreateListController: UIViewController {
     
     @IBOutlet weak var listName: UITextField!
-    @IBOutlet weak var createButton: UIButton!
-
+    @IBOutlet weak var create: UIButton!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        createButton.addTarget(self, action: Selector(("buttonClicked:")), for: .touchDown)
+        create.addTarget(self, action: Selector(("buttonClicked:")), for: .touchDown)
     }
     
     @IBAction func listNameChanged(_ sender: UITextField) {
-        createButton.isEnabled = true
+        // Ensure that the string isn't empty any maybe at least 3 chars?
+        create.isEnabled = true
     }
     
-    @IBAction func listCreate(_ sender: UIButton) {
+    @IBAction func listCreate(_ sender: Any) {
         if listName.text != "" {
             if tabBarController != nil {
                 if (tabBarController?.customizableViewControllers![1]) != nil {

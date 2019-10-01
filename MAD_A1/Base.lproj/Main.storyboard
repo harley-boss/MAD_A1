@@ -13,7 +13,7 @@
         <!--Edit-->
         <scene sceneID="LCV-Xy-CsR">
             <objects>
-                <viewController id="Vdf-78-1im" sceneMemberID="viewController">
+                <viewController id="Vdf-78-1im" customClass="EditListController" customModule="MAD_A1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ap8-Xk-OGy">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -108,24 +108,10 @@
         <scene sceneID="QsH-uI-iSi">
             <objects>
                 <viewController id="36y-2t-5RQ" customClass="CreateListController" customModule="MAD_A1" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="HzJ-zh-IF0" customClass="CreateList">
+                    <view key="view" contentMode="scaleToFill" id="HzJ-zh-IF0">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dQ4-Xm-7Eo">
-                                <rect key="frame" x="57" y="423" width="300" height="50"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="Rvk-IU-1bp"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="p5S-HT-8hi"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="33"/>
-                                <state key="normal" title="Create">
-                                    <color key="titleColor" red="1" green="0.2293613091880975" blue="0.90532261549802262" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                </state>
-                                <connections>
-                                    <action selector="listCreate:" destination="36y-2t-5RQ" eventType="touchUpInside" id="O1t-pn-zPx"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Name your list" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Czt-B3-eAY">
                                 <rect key="frame" x="136" y="139" width="142" height="32"/>
                                 <constraints>
@@ -147,16 +133,22 @@
                                     <action selector="listNameChanged:" destination="36y-2t-5RQ" eventType="editingChanged" id="teE-W4-dQZ"/>
                                 </connections>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wav-ia-iWa">
+                                <rect key="frame" x="146" y="416" width="122" height="64"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="43"/>
+                                <state key="normal" title="Create">
+                                    <color key="titleColor" red="0.93007041956213843" green="0.32720360276381821" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.98918385930632502" green="1" blue="0.055373590668698403" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="l7Q-55-ofn" firstAttribute="leading" secondItem="dQ4-Xm-7Eo" secondAttribute="leading" id="4pC-oN-AuK"/>
                             <constraint firstItem="Czt-B3-eAY" firstAttribute="centerX" secondItem="HzJ-zh-IF0" secondAttribute="centerX" id="NcX-tg-iAh"/>
-                            <constraint firstItem="dQ4-Xm-7Eo" firstAttribute="centerX" secondItem="HzJ-zh-IF0" secondAttribute="centerX" id="pM7-uF-yhg"/>
+                            <constraint firstItem="wav-ia-iWa" firstAttribute="centerX" secondItem="l7Q-55-ofn" secondAttribute="centerX" id="bYe-pw-O4U"/>
+                            <constraint firstItem="wav-ia-iWa" firstAttribute="centerY" secondItem="HzJ-zh-IF0" secondAttribute="centerY" id="jce-z0-f4c"/>
                             <constraint firstItem="l7Q-55-ofn" firstAttribute="top" secondItem="Czt-B3-eAY" secondAttribute="bottom" constant="8" symbolic="YES" id="tBu-3w-owz"/>
                             <constraint firstItem="Czt-B3-eAY" firstAttribute="top" secondItem="Jbr-nv-TbI" secondAttribute="top" constant="85" id="v5B-lg-ikE"/>
                             <constraint firstItem="l7Q-55-ofn" firstAttribute="centerX" secondItem="HzJ-zh-IF0" secondAttribute="centerX" id="wR8-S4-hqN"/>
-                            <constraint firstItem="dQ4-Xm-7Eo" firstAttribute="centerY" secondItem="HzJ-zh-IF0" secondAttribute="centerY" id="wkK-Tj-yfP"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Jbr-nv-TbI"/>
                     </view>
@@ -164,7 +156,7 @@
                         <color key="badgeColor" red="1" green="0.2293613092" blue="0.90532261550000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </tabBarItem>
                     <connections>
-                        <outlet property="createButton" destination="dQ4-Xm-7Eo" id="E1s-kn-GbP"/>
+                        <outlet property="create" destination="wav-ia-iWa" id="mAc-Hg-kW5"/>
                         <outlet property="listName" destination="l7Q-55-ofn" id="2b8-vE-hd8"/>
                     </connections>
                 </viewController>

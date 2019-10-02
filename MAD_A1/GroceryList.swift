@@ -15,9 +15,13 @@ class GroceryList {
     var id: Int = 0
     var listName: String = ""
     var listItems = [String]()
+    var isExpanded: Bool
     
-    init (_ listName : String) {
+    init (_ id : Int, _ listName : String, _ listItems : [String]) {
         self.listName = listName
+        self.id = id
+        self.listItems = listItems
+        self.isExpanded = true
     }
     
     // Add an item to the list
@@ -43,6 +47,11 @@ class GroceryList {
         if itemIndex <= listItems.count {
             listItems.remove(at: itemIndex)
         }
+    }
+    
+    // Removes an item based on its index
+    public func removeAllItems() {
+        listItems.removeAll();
     }
     
     public func getListName() -> String {

@@ -11,7 +11,7 @@ import Foundation
 // This class represents a list item entry
 
 class GroceryList {
-    
+    static let sharedList = GroceryList(0,"",[])
     var id: Int = 0
     var listName: String = ""
     var listItems = [String]()

@@ -22,6 +22,10 @@ class EditListController: UIViewController, UITextFieldDelegate {
         setupUI();
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        setList()
+    }
+    
     public func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         
         textField.resignFirstResponder()
@@ -42,10 +46,11 @@ class EditListController: UIViewController, UITextFieldDelegate {
     }
     
     func setList() {
-        
+        listNameLabel.text = "List Name: " + GroceryList.sharedList.listName
     }
     
     func setupUI(){
+        setList();
         self.textField.delegate = self
         
         let button = UIButton(type: .custom)

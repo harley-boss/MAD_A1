@@ -16,35 +16,21 @@ class CreateListController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = UIColor(red: 90/255, green: 200/255, blue: 250/255, alpha: 1)
         // Do any additional setup after loading the view.
     }
     
     @IBAction func createClicked(_ sender: Any) {
         //Only change tabs if the list had a name
         if(!(listName.text?.isEmpty)!){
-            
             GroceryList.sharedList.listName = listName.text!
             self.tabBarController?.selectedIndex = 1
-            
             listName.text = ""
-        }
-        
+        }        
     }
     
     
     @IBAction func listNameChanged(_ sender: UITextField) {
-        // Ensure that the string isn't empty any maybe at least 3 chars?
-    }
-    
-    @IBAction func listCreate(_ sender: Any) {
-        if listName.text != "" {
-            if tabBarController != nil {
-                if (tabBarController?.customizableViewControllers![1]) != nil {
-                    
-                }
-                
-            }
-        }
-
+        // Do validation in the future
     }
 }

@@ -1,11 +1,10 @@
-//
-//  GroceryList.swift
-//  MAD_A1
-//
-//  Created by Harley Boss on 2019-09-24.
-//  Copyright © 2019 Saline Solutions. All rights reserved.
-//
-
+/*
+ * FILE : CreateList.swift
+ * PROJECT : PROG3230 - Assignment #1
+ * PROGRAMMER : Harley Boss / Spencer Billings
+ * FIRST VERSION : 10-04-2019
+ * DESCRIPTION : Allows user to name a grocery list
+ */
 
 import UIKit
 
@@ -14,14 +13,25 @@ class CreateListController: UIViewController {
     @IBOutlet weak var listName: UITextField!
     @IBOutlet weak var create: UIButton!
     
+    /*
+     * Function : viewDidLoad
+     * Description : On create lifecycle hook
+     * Paramaters : None
+     * Returns : None
+     */
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = UIColor(red: 90/255, green: 200/255, blue: 250/255, alpha: 1)
-        // Do any additional setup after loading the view.
     }
     
+    /*
+     * Function : createClicked
+     * Description : Function called when create button is clicked, sets the list name and
+     *               presents second tab
+     * Paramaters : Any
+     * Returns : None
+     */
     @IBAction func createClicked(_ sender: Any) {
-        //Only change tabs if the list had a name
         if(!(listName.text?.isEmpty)!){
             GroceryList.sharedList.listName = listName.text!
             self.tabBarController?.selectedIndex = 1
@@ -29,7 +39,12 @@ class CreateListController: UIViewController {
         }        
     }
     
-    
+    /*
+     * Function : listNameChanged
+     * Description : Listener for the text field that's called whenever text is entered
+     * Paramaters : UITextField
+     * Returns : None
+     */
     @IBAction func listNameChanged(_ sender: UITextField) {
         // Do validation in the future
     }

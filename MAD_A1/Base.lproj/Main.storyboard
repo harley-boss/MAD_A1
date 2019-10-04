@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="List Name: " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NvB-In-nxq" userLabel="List Name:">
-                                <rect key="frame" x="131.5" y="89" width="112" height="28"/>
+                                <rect key="frame" x="132" y="89" width="111" height="28"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -34,36 +34,29 @@
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" button="YES"/>
                                 </accessibility>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="291" id="Vm5-Gb-FfS"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="alphabet"/>
                             </textField>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="TmP-Lq-cv3">
                                 <rect key="frame" x="16" y="187" width="343" height="215"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="215" id="3gF-6u-18c"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="jya-bm-M6a" firstAttribute="top" secondItem="dcL-QS-Odo" secondAttribute="bottom" constant="31" id="9wz-6W-2mH"/>
-                            <constraint firstItem="TmP-Lq-cv3" firstAttribute="leading" secondItem="Ap8-Xk-OGy" secondAttribute="leadingMargin" id="C3O-St-VaE"/>
-                            <constraint firstItem="QRp-L2-d6L" firstAttribute="trailing" secondItem="jya-bm-M6a" secondAttribute="trailing" constant="42" id="G3e-A3-Gh8"/>
-                            <constraint firstItem="TmP-Lq-cv3" firstAttribute="top" secondItem="NvB-In-nxq" secondAttribute="bottom" constant="70" id="IXc-vn-90N"/>
-                            <constraint firstItem="TmP-Lq-cv3" firstAttribute="centerX" secondItem="QRp-L2-d6L" secondAttribute="centerX" id="Q5u-P6-l2T"/>
-                            <constraint firstItem="NvB-In-nxq" firstAttribute="top" secondItem="QRp-L2-d6L" secondAttribute="top" constant="69" id="R72-EB-a1f"/>
-                            <constraint firstItem="dcL-QS-Odo" firstAttribute="centerX" secondItem="QRp-L2-d6L" secondAttribute="centerX" id="RbN-su-KGx"/>
-                            <constraint firstItem="jya-bm-M6a" firstAttribute="leading" secondItem="QRp-L2-d6L" secondAttribute="leading" constant="42" id="SuV-4D-knO"/>
-                            <constraint firstItem="TmP-Lq-cv3" firstAttribute="centerX" secondItem="Ap8-Xk-OGy" secondAttribute="centerX" id="e9N-up-VF1"/>
-                            <constraint firstItem="jya-bm-M6a" firstAttribute="top" secondItem="dcL-QS-Odo" secondAttribute="bottom" constant="31" id="geT-hA-zIv"/>
-                            <constraint firstItem="dcL-QS-Odo" firstAttribute="top" secondItem="TmP-Lq-cv3" secondAttribute="bottom" constant="70" id="jqg-Xk-dqW"/>
-                            <constraint firstItem="NvB-In-nxq" firstAttribute="centerX" secondItem="QRp-L2-d6L" secondAttribute="centerX" id="tcw-Z2-VvA"/>
+                            <constraint firstItem="TmP-Lq-cv3" firstAttribute="top" secondItem="NvB-In-nxq" secondAttribute="bottom" constant="70" id="5Uo-pu-Imh"/>
+                            <constraint firstItem="jya-bm-M6a" firstAttribute="top" secondItem="dcL-QS-Odo" secondAttribute="bottom" constant="31" id="5hw-d7-v1m"/>
+                            <constraint firstItem="dcL-QS-Odo" firstAttribute="centerX" secondItem="jya-bm-M6a" secondAttribute="centerX" id="IoF-ua-7yk"/>
+                            <constraint firstItem="NvB-In-nxq" firstAttribute="centerX" secondItem="TmP-Lq-cv3" secondAttribute="centerX" id="Lzb-Hm-6IH"/>
+                            <constraint firstItem="TmP-Lq-cv3" firstAttribute="leading" secondItem="Ap8-Xk-OGy" secondAttribute="leadingMargin" id="NLp-Uf-Ute"/>
+                            <constraint firstItem="TmP-Lq-cv3" firstAttribute="trailing" secondItem="Ap8-Xk-OGy" secondAttribute="trailingMargin" id="PIj-CS-cy4"/>
+                            <constraint firstItem="NvB-In-nxq" firstAttribute="top" secondItem="QRp-L2-d6L" secondAttribute="top" constant="69" id="WPu-OG-4Io"/>
+                            <constraint firstItem="dcL-QS-Odo" firstAttribute="top" secondItem="TmP-Lq-cv3" secondAttribute="bottom" constant="70" id="g7X-cd-Yfg"/>
+                            <constraint firstItem="jya-bm-M6a" firstAttribute="leading" secondItem="QRp-L2-d6L" secondAttribute="leading" constant="42" id="hLw-yn-JFa"/>
+                            <constraint firstItem="TmP-Lq-cv3" firstAttribute="centerX" secondItem="dcL-QS-Odo" secondAttribute="centerX" id="iQJ-lW-cf1"/>
+                            <constraint firstItem="QRp-L2-d6L" firstAttribute="bottom" secondItem="jya-bm-M6a" secondAttribute="bottom" constant="57" id="qae-ca-eXl"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="QRp-L2-d6L"/>
                     </view>

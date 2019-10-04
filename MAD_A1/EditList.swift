@@ -6,12 +6,6 @@
  * DESCRIPTION :
  * Allows user the enter items to add to their grocery list
  */
-//  EditList.swift
-//  MAD_A1
-//
-//  Created by Harley Boss on 2019-09-27.
-//  Copyright © 2019 Saline Solutions. All rights reserved.
-//
 
 import UIKit
 
@@ -90,7 +84,7 @@ class EditListController: UIViewController, UITextFieldDelegate {
      * Returns : None
      */
     func setList() {
-        listNameLabel.text = "List Name: " + GroceryList.sharedList.listName
+        listNameLabel.text = GroceryList.sharedList.listName
     }
     
     

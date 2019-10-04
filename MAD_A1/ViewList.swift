@@ -6,6 +6,7 @@
 * DESCRIPTION :
 * Displays expandable grocery lists
 */
+
 import UIKit
 
 class ViewListController: UIViewController, UITableViewDataSource, UITableViewDelegate {
@@ -23,7 +24,6 @@ class ViewListController: UIViewController, UITableViewDataSource, UITableViewDe
     */
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
         self.tableView.backgroundColor = .white
         self.tableView.tableFooterView = UIView()
     }
@@ -36,7 +36,6 @@ class ViewListController: UIViewController, UITableViewDataSource, UITableViewDe
     * Returns : None
     */
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        
         let button = UIButton(type: .system)
         button.setTitle(groceryList[section].getListName(), for: .normal)
         button.setTitleColor(.white, for: .normal)
@@ -45,7 +44,6 @@ class ViewListController: UIViewController, UITableViewDataSource, UITableViewDe
         button.contentHorizontalAlignment = .center
         button.contentEdgeInsets = UIEdgeInsetsMake(0,10,0,0)
         button.addTarget(self, action: #selector(handleOpenClose), for: .touchUpInside)
-        
         button.tag = section
         return button
     }
@@ -73,17 +71,15 @@ class ViewListController: UIViewController, UITableViewDataSource, UITableViewDe
             let indexPath = IndexPath(row: row, section: section)
             indexPaths.append(indexPath)
         }
+        
         let isExpanded = groceryList[section].isExpanded
         groceryList[section].isExpanded = !isExpanded
+        
         if(isExpanded) {
             tableView.deleteRows(at: indexPaths, with: .fade)
-        }
-        else {
+        } else {
             tableView.insertRows(at: indexPaths, with: .fade)
-
         }
-        
-
     }
     
     /*
@@ -105,7 +101,6 @@ class ViewListController: UIViewController, UITableViewDataSource, UITableViewDe
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
         cell.backgroundColor = UIColor.clear
         cell.textLabel?.textColor = .black
-
     }
     
    /*
@@ -129,10 +124,8 @@ class ViewListController: UIViewController, UITableViewDataSource, UITableViewDe
     */
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cellList", for: indexPath)
-        
         let listName = groceryList[indexPath.section].getAllItems()[indexPath.row]
             cell.textLabel?.text = listName
         return cell
     }
-
 }

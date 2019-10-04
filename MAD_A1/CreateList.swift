@@ -12,7 +12,7 @@ import UIKit
 class CreateListController: UIViewController {
     
     @IBOutlet weak var listName: UITextField!
-    @IBOutlet weak var create: UIButton!s
+    @IBOutlet weak var create: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()

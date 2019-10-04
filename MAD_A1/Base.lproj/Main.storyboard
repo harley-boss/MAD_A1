@@ -90,7 +90,7 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="2bF-XX-6Dj">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <color key="sectionIndexBackgroundColor" red="1" green="0.2293613092" blue="0.90532261550000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="sectionIndexBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellList" textLabel="QbW-KU-a52" style="IBUITableViewCellStyleDefault" id="G6m-Ln-VD5">
                                         <rect key="frame" x="0.0" y="28" width="375" height="43.5"/>
@@ -116,12 +116,12 @@
                                 </connections>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" red="0.13333333333333333" green="0.18431372549019609" blue="0.24313725490196078" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="2bF-XX-6Dj" firstAttribute="trailing" secondItem="45E-qc-2D8" secondAttribute="trailing" id="63p-fY-A4v"/>
-                            <constraint firstItem="2bF-XX-6Dj" firstAttribute="leading" secondItem="45E-qc-2D8" secondAttribute="leading" id="8YI-6P-RUU"/>
-                            <constraint firstItem="2bF-XX-6Dj" firstAttribute="top" secondItem="45E-qc-2D8" secondAttribute="top" id="EAm-zh-K2n"/>
-                            <constraint firstItem="45E-qc-2D8" firstAttribute="bottom" secondItem="2bF-XX-6Dj" secondAttribute="bottom" id="reJ-M8-8VV"/>
+                            <constraint firstItem="2bF-XX-6Dj" firstAttribute="bottom" secondItem="45E-qc-2D8" secondAttribute="bottom" id="Ykv-IH-IHr"/>
+                            <constraint firstItem="2bF-XX-6Dj" firstAttribute="top" secondItem="45E-qc-2D8" secondAttribute="top" id="fSo-hn-tFS"/>
+                            <constraint firstItem="2bF-XX-6Dj" firstAttribute="leading" secondItem="45E-qc-2D8" secondAttribute="leading" id="uG7-eb-ebt"/>
+                            <constraint firstItem="2bF-XX-6Dj" firstAttribute="trailing" secondItem="45E-qc-2D8" secondAttribute="trailing" id="yHM-86-jYY"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="45E-qc-2D8"/>
                     </view>

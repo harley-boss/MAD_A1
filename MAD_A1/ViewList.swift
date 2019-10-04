@@ -13,23 +13,23 @@
 import UIKit
 
 class ViewListController: UIViewController, UITableViewDataSource, UITableViewDelegate {
-    let actualList = [GroceryList(0, "Grocery List 1", ["Orange", "Purple", "Blue"]), GroceryList(1, "Grocery List 2", ["Nathan", "Justin", "Spencer", "Harley"])]
+    let actualList = [GroceryList(0, "Grocery List 1", ["Orange", "Purple", "Blue"]), GroceryList(1, "Grocery List 2", ["Rice", "Beans", "Carrots", "Harley"]), GroceryList(1, "Grocery List 3", ["Buns", "Burgers", "Hot Dogs", "Harley"]), GroceryList(1, "Grocery List 4", ["Nathan", "Justin", "Spencer", "Harley"]), ]
     
     let lists = ["Grocery list 1", "Grocery list 2", "Grocery list 3"]
     @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        self.tableView.backgroundColor = .darkGray
+        self.tableView.backgroundColor = .white
     }
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         
         let button = UIButton(type: .system)
-        button.setTitle("Close", for: .normal)
+        button.setTitle(actualList[section].getListName(), for: .normal)
         button.setTitleColor(.white, for: .normal)
-        button.backgroundColor = .darkGray
+        button.backgroundColor = .systemTeal
         button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 20)
-        button.contentHorizontalAlignment = .left
+        button.contentHorizontalAlignment = .center
         button.contentEdgeInsets = UIEdgeInsetsMake(0,10,0,0)
         button.addTarget(self, action: #selector(handleOpenClose), for: .touchUpInside)
         
@@ -58,14 +58,14 @@ class ViewListController: UIViewController, UITableViewDataSource, UITableViewDe
 
     }
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 34
+        return 50
     }
     func numberOfSections(in tableView: UITableView) -> Int {
         return actualList.count
     }
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
         cell.backgroundColor = UIColor.clear
-        cell.textLabel?.textColor = .white
+        cell.textLabel?.textColor = .black
 
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

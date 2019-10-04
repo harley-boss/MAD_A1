@@ -21,6 +21,7 @@ class ViewListController: UIViewController, UITableViewDataSource, UITableViewDe
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         self.tableView.backgroundColor = .white
+        self.tableView.tableFooterView = UIView()
     }
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         

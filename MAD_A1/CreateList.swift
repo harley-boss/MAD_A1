@@ -12,9 +12,7 @@ import UIKit
 class CreateListController: UIViewController {
     
     @IBOutlet weak var listName: UITextField!
-    @IBOutlet weak var create: UIButton!
-    
-    
+    @IBOutlet weak var create: UIButton!s
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,9 +20,15 @@ class CreateListController: UIViewController {
     }
     
     @IBAction func createClicked(_ sender: Any) {
-        self.tabBarController?.selectedIndex = 1
+        //Only change tabs if the list had a name
+        if(!(listName.text?.isEmpty)!){
+            
+            GroceryList.sharedList.listName = listName.text!
+            self.tabBarController?.selectedIndex = 1
+            
+            listName.text = ""
+        }
         
-        listName.text = "ok"
     }
     
     

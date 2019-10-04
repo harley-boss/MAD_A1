@@ -40,7 +40,7 @@ class ViewListController: UIViewController, UITableViewDataSource, UITableViewDe
         let button = UIButton(type: .system)
         button.setTitle(groceryList[section].getListName(), for: .normal)
         button.setTitleColor(.white, for: .normal)
-        button.backgroundColor = .systemTeal
+        button.backgroundColor = UIColor(red: 90/255, green: 200/255, blue: 250/255, alpha: 1)
         button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 20)
         button.contentHorizontalAlignment = .center
         button.contentEdgeInsets = UIEdgeInsetsMake(0,10,0,0)

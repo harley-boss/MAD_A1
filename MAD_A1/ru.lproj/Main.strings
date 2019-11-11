@@ -1,0 +1,24 @@
+
+/* Class = "UILabel"; text = "Name your list"; ObjectID = "Czt-B3-eAY"; */
+"Czt-B3-eAY.text" = "Name your list";
+
+/* Class = "UITabBarItem"; title = "Edit"; ObjectID = "Ehp-lU-DZ0"; */
+"Ehp-lU-DZ0.title" = "Edit";
+
+/* Class = "UILabel"; text = "List Name: "; ObjectID = "NvB-In-nxq"; */
+"NvB-In-nxq.text" = "List Name: ";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "QbW-KU-a52"; */
+"QbW-KU-a52.text" = "Title";
+
+/* Class = "UITabBarItem"; title = "Create"; ObjectID = "XJj-Ae-Vvq"; */
+"XJj-Ae-Vvq.title" = "Create";
+
+/* Class = "UILabel"; text = "Add an item"; ObjectID = "dcL-QS-Odo"; */
+"dcL-QS-Odo.text" = "Add an item";
+
+/* Class = "UIButton"; normalTitle = "Create"; ObjectID = "wav-ia-iWa"; */
+"wav-ia-iWa.normalTitle" = "Create";
+
+/* Class = "UITabBarItem"; title = "View"; ObjectID = "zG1-ka-olk"; */
+"zG1-ka-olk.title" = "View";

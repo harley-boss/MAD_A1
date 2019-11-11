@@ -65,6 +65,7 @@
                     </tabBarItem>
                     <navigationItem key="navigationItem" id="FAE-Fo-79L"/>
                     <connections>
+                        <outlet property="addItemLabel" destination="dcL-QS-Odo" id="4xY-3M-Gzk"/>
                         <outlet property="listNameLabel" destination="NvB-In-nxq" id="FW4-EX-qg5"/>
                         <outlet property="textField" destination="jya-bm-M6a" id="xMn-e8-Ml3"/>
                         <outlet property="textView" destination="TmP-Lq-cv3" id="mXj-zX-15m"/>
@@ -186,7 +187,9 @@
                         <color key="badgeColor" red="1" green="0.2293613092" blue="0.90532261550000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </tabBarItem>
                     <connections>
+                        <outlet property="create" destination="wav-ia-iWa" id="N4y-CC-5YP"/>
                         <outlet property="listName" destination="l7Q-55-ofn" id="2b8-vE-hd8"/>
+                        <outlet property="listTitle" destination="Czt-B3-eAY" id="wHF-hE-5t2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JJV-tJ-TF3" userLabel="First Responder" sceneMemberID="firstResponder"/>

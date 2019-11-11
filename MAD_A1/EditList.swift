@@ -14,7 +14,7 @@ class EditListController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var listNameLabel: UILabel!
     @IBOutlet weak var textView: UITextView!
     @IBOutlet weak var textField: UITextField!
-    
+    @IBOutlet weak var addItemLabel: UILabel!
     
     /*
      * Function : viewDidLoad
@@ -23,8 +23,16 @@ class EditListController: UIViewController, UITextFieldDelegate {
      * Returns : None
      */
     override func viewDidLoad() {
-        super.viewDidLoad() ;
+        super.viewDidLoad()
+        listNameLabel.text = NSLocalizedString("nameList", comment: "")
+        addItemLabel.text = NSLocalizedString("addItem", comment: "")
+        self.title = NSLocalizedString("edit", comment: "")
+        self.textField.addTarget(self, action: #selector(showKeyboard), for: .touchDown)
         setupUI();
+    }
+    
+    @objc func showKeyboard(textField: UITextField) {
+        self.textField.becomeFirstResponder()
     }
     
     /*

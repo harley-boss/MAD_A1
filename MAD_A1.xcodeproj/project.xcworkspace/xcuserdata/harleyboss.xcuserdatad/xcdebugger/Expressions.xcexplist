@@ -9,10 +9,10 @@
                value = "print(listName.text)">
             </PersistentString>
             <PersistentString
-               value = "sender">
+               value = "listName">
             </PersistentString>
             <PersistentString
-               value = "listName">
+               value = "sender">
             </PersistentString>
             <PersistentString
                value = "listName.text">
@@ -27,6 +27,17 @@
          <PersistentStrings>
             <PersistentString
                value = "listName.text">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "CreateListController.viewDidLoad():CreateList.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "create">
+            </PersistentString>
+            <PersistentString
+               value = "listName">
             </PersistentString>
          </PersistentStrings>
       </ContextState>

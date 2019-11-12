@@ -1,0 +1,15 @@
+/* 
+  Localizable.strings
+  MAD_A1
+
+  Created by Harley Boss on 2019-11-11.
+  Copyright © 2019 Saline Solutions. All rights reserved.
+*/
+
+"nameList" = "Name your list:";
+"listName" = "List Name: ";
+"create" = "Create";
+"edit" = "Edit";
+"view" = "View";
+"addItem" = "Add an item";
+"groceryListNum" = "Grocery List ";

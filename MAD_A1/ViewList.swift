@@ -14,7 +14,6 @@ class ViewListController: UIViewController, UITableViewDataSource, UITableViewDe
     // Hard coded grocery lists for this iteration of the assignment
     let groceryList = [GroceryList(0, "Grocery List 1", ["Orange", "Purple", "Blue"]), GroceryList(1, "Grocery List 2", ["Rice", "Beans", "Carrots", "Harley"]), GroceryList(1, "Grocery List 3", ["Buns", "Burgers", "Hot Dogs", "Harley"]), GroceryList(1, "Grocery List 4", ["Nathan", "Justin", "Spencer", "Harley"]), ]
     @IBOutlet weak var tableView: UITableView!
-
     
     /*
     * Function : viewDidLoad
@@ -24,6 +23,7 @@ class ViewListController: UIViewController, UITableViewDataSource, UITableViewDe
     */
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = NSLocalizedString("view", comment: "")
         self.tableView.backgroundColor = .white
         self.tableView.tableFooterView = UIView()
     }

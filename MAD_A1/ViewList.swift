@@ -12,7 +12,7 @@ import UIKit
 class ViewListController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     // Hard coded grocery lists for this iteration of the assignment
-    let groceryList = [GroceryList(0, "Grocery List 1", ["Orange", "Purple", "Blue"]), GroceryList(1, "Grocery List 2", ["Rice", "Beans", "Carrots", "Harley"]), GroceryList(1, "Grocery List 3", ["Buns", "Burgers", "Hot Dogs", "Harley"]), GroceryList(1, "Grocery List 4", ["Nathan", "Justin", "Spencer", "Harley"]), ]
+    let groceryList = [GroceryList(0, "1", ["Orange", "Purple", "Blue"]), GroceryList(1, "2", ["Rice", "Beans", "Carrots", "Harley"]), GroceryList(1, "3", ["Buns", "Burgers", "Hot Dogs", "Harley"]), GroceryList(1, "4", ["Nathan", "Justin", "Spencer", "Harley"]), ]
     @IBOutlet weak var tableView: UITableView!
     
     /*
@@ -37,7 +37,8 @@ class ViewListController: UIViewController, UITableViewDataSource, UITableViewDe
     */
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let button = UIButton(type: .system)
-        button.setTitle(groceryList[section].getListName(), for: .normal)
+        
+        button.setTitle(NSLocalizedString("groceryListNum", comment: "") + groceryList[section].getListName(), for: .normal)
         button.setTitleColor(.white, for: .normal)
         button.backgroundColor = UIColor(red: 90/255, green: 200/255, blue: 250/255, alpha: 1)
         button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 20)
@@ -127,5 +128,17 @@ class ViewListController: UIViewController, UITableViewDataSource, UITableViewDe
         let listName = groceryList[indexPath.section].getAllItems()[indexPath.row]
             cell.textLabel?.text = listName
         return cell
+    }
+    
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "toDetailView" {
+            let detailVC: DetailViewController? = segue.destination as? DetailViewController
+            let cell: UITableViewCell? = sender as? UITableViewCell
+            if cell != nil && detailVC != nil {
+                detailVC!.contentText = cell!.textLabel!.text
+                
+            }
+        }
     }
 }

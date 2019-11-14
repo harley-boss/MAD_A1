@@ -129,16 +129,4 @@ class ViewListController: UIViewController, UITableViewDataSource, UITableViewDe
             cell.textLabel?.text = listName
         return cell
     }
-    
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "toDetailView" {
-            let detailVC: DetailViewController? = segue.destination as? DetailViewController
-            let cell: UITableViewCell? = sender as? UITableViewCell
-            if cell != nil && detailVC != nil {
-                detailVC!.contentText = cell!.textLabel!.text
-                
-            }
-        }
-    }
 }

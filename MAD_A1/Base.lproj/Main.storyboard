@@ -45,17 +45,10 @@
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="TmP-Lq-cv3" firstAttribute="top" secondItem="NvB-In-nxq" secondAttribute="bottom" constant="70" id="5Uo-pu-Imh"/>
-                            <constraint firstItem="jya-bm-M6a" firstAttribute="top" secondItem="dcL-QS-Odo" secondAttribute="bottom" constant="31" id="5hw-d7-v1m"/>
-                            <constraint firstItem="dcL-QS-Odo" firstAttribute="centerX" secondItem="jya-bm-M6a" secondAttribute="centerX" id="IoF-ua-7yk"/>
-                            <constraint firstItem="NvB-In-nxq" firstAttribute="centerX" secondItem="TmP-Lq-cv3" secondAttribute="centerX" id="Lzb-Hm-6IH"/>
-                            <constraint firstItem="TmP-Lq-cv3" firstAttribute="leading" secondItem="Ap8-Xk-OGy" secondAttribute="leadingMargin" id="NLp-Uf-Ute"/>
-                            <constraint firstItem="TmP-Lq-cv3" firstAttribute="trailing" secondItem="Ap8-Xk-OGy" secondAttribute="trailingMargin" id="PIj-CS-cy4"/>
-                            <constraint firstItem="NvB-In-nxq" firstAttribute="top" secondItem="QRp-L2-d6L" secondAttribute="top" constant="69" id="WPu-OG-4Io"/>
-                            <constraint firstItem="dcL-QS-Odo" firstAttribute="top" secondItem="TmP-Lq-cv3" secondAttribute="bottom" constant="70" id="g7X-cd-Yfg"/>
-                            <constraint firstItem="jya-bm-M6a" firstAttribute="leading" secondItem="QRp-L2-d6L" secondAttribute="leading" constant="42" id="hLw-yn-JFa"/>
-                            <constraint firstItem="TmP-Lq-cv3" firstAttribute="centerX" secondItem="dcL-QS-Odo" secondAttribute="centerX" id="iQJ-lW-cf1"/>
-                            <constraint firstItem="QRp-L2-d6L" firstAttribute="bottom" secondItem="jya-bm-M6a" secondAttribute="bottom" constant="57" id="qae-ca-eXl"/>
+                            <constraint firstItem="al7-mN-uLG" firstAttribute="leading" secondItem="QRp-L2-d6L" secondAttribute="leading" constant="15" id="D8l-6O-yEr"/>
+                            <constraint firstItem="QRp-L2-d6L" firstAttribute="bottom" secondItem="al7-mN-uLG" secondAttribute="bottom" constant="58" id="Gaw-6t-SaC"/>
+                            <constraint firstItem="al7-mN-uLG" firstAttribute="top" secondItem="QRp-L2-d6L" secondAttribute="top" constant="105" id="jHi-p0-Mib"/>
+                            <constraint firstItem="QRp-L2-d6L" firstAttribute="trailing" secondItem="al7-mN-uLG" secondAttribute="trailing" constant="17" id="utL-hC-Ddp"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="QRp-L2-d6L"/>
                     </view>
@@ -175,13 +168,8 @@
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="Czt-B3-eAY" firstAttribute="centerX" secondItem="HzJ-zh-IF0" secondAttribute="centerX" id="4nb-XW-MJZ"/>
-                            <constraint firstItem="Czt-B3-eAY" firstAttribute="centerX" secondItem="HzJ-zh-IF0" secondAttribute="centerX" id="NcX-tg-iAh"/>
-                            <constraint firstItem="wav-ia-iWa" firstAttribute="centerX" secondItem="l7Q-55-ofn" secondAttribute="centerX" id="bYe-pw-O4U"/>
-                            <constraint firstItem="wav-ia-iWa" firstAttribute="centerY" secondItem="HzJ-zh-IF0" secondAttribute="centerY" id="jce-z0-f4c"/>
-                            <constraint firstItem="l7Q-55-ofn" firstAttribute="top" secondItem="Czt-B3-eAY" secondAttribute="bottom" constant="8" symbolic="YES" id="tBu-3w-owz"/>
-                            <constraint firstItem="Czt-B3-eAY" firstAttribute="top" secondItem="Jbr-nv-TbI" secondAttribute="top" constant="85" id="v5B-lg-ikE"/>
-                            <constraint firstItem="l7Q-55-ofn" firstAttribute="centerX" secondItem="HzJ-zh-IF0" secondAttribute="centerX" id="wR8-S4-hqN"/>
+                            <constraint firstItem="Xgl-4b-GBd" firstAttribute="centerX" secondItem="HzJ-zh-IF0" secondAttribute="centerX" id="6ov-Xl-rng"/>
+                            <constraint firstItem="Xgl-4b-GBd" firstAttribute="top" secondItem="Jbr-nv-TbI" secondAttribute="top" constant="202" id="Lsl-0I-oes"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Jbr-nv-TbI"/>
                     </view>

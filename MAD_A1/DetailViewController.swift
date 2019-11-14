@@ -5,7 +5,6 @@
 //  Created by Nathan Davis on 2019-11-14.
 //  Copyright © 2019 Saline Solutions. All rights reserved.
 //
-
 import UIKit
 
 class DetailViewController: UIViewController {
@@ -17,11 +16,10 @@ class DetailViewController: UIViewController {
             self.contentLabel.text = contentText!
         }
     }
-    
+
 
     /*
     // MARK: - Navigation
-
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destination.

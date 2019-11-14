@@ -17,6 +17,7 @@
 		D6FE2E43233A97C00042BAA7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6FE2E41233A97C00042BAA7 /* LaunchScreen.storyboard */; };
 		D6FE2E4B233AD5040042BAA7 /* CreateList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6FE2E4A233AD5040042BAA7 /* CreateList.swift */; };
 		D6FE2E4D233AD51A0042BAA7 /* GroceryList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6FE2E4C233AD51A0042BAA7 /* GroceryList.swift */; };
+		D830D779237DEEAA00A901E1 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D830D778237DEEAA00A901E1 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		D6FE2E44233A97C00042BAA7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D6FE2E4A233AD5040042BAA7 /* CreateList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateList.swift; sourceTree = "<group>"; };
 		D6FE2E4C233AD51A0042BAA7 /* GroceryList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceryList.swift; sourceTree = "<group>"; };
+		D830D778237DEEAA00A901E1 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +80,7 @@
 				D6BCD78C233E3F4200BE05EF /* EditList.swift */,
 				D6BCD78E233E3F5000BE05EF /* ViewList.swift */,
 				D649083D2379F60E00BBF397 /* Localizable.strings */,
+				D830D778237DEEAA00A901E1 /* DetailViewController.swift */,
 			);
 			path = MAD_A1;
 			sourceTree = "<group>";
@@ -159,6 +162,7 @@
 				D6FE2E4D233AD51A0042BAA7 /* GroceryList.swift in Sources */,
 				D6BCD78F233E3F5000BE05EF /* ViewList.swift in Sources */,
 				D6FE2E39233A97BF0042BAA7 /* AppDelegate.swift in Sources */,
+				D830D779237DEEAA00A901E1 /* DetailViewController.swift in Sources */,
 				D6FE2E4B233AD5040042BAA7 /* CreateList.swift in Sources */,
 				D6BCD78D233E3F4200BE05EF /* EditList.swift in Sources */,
 			);

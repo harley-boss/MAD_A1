@@ -1,24 +1,24 @@
 
 /* Class = "UILabel"; text = "Name your list"; ObjectID = "Czt-B3-eAY"; */
-"Czt-B3-eAY.text" = "Name your list";
+"Czt-B3-eAY.text" = "Nommez votre liste";
 
 /* Class = "UITabBarItem"; title = "Edit"; ObjectID = "Ehp-lU-DZ0"; */
-"Ehp-lU-DZ0.title" = "Edit";
+"Ehp-lU-DZ0.title" = "Modifier";
 
 /* Class = "UILabel"; text = "List Name: "; ObjectID = "NvB-In-nxq"; */
-"NvB-In-nxq.text" = "List Name: ";
+"NvB-In-nxq.text" = "Liste de noms: ";
 
 /* Class = "UILabel"; text = "Title"; ObjectID = "QbW-KU-a52"; */
 "QbW-KU-a52.text" = "Title";
 
 /* Class = "UITabBarItem"; title = "Create"; ObjectID = "XJj-Ae-Vvq"; */
-"XJj-Ae-Vvq.title" = "Create";
+"XJj-Ae-Vvq.title" = "Créer";
 
 /* Class = "UILabel"; text = "Add an item"; ObjectID = "dcL-QS-Odo"; */
-"dcL-QS-Odo.text" = "Add an item";
+"dcL-QS-Odo.text" = "Ajouter un article";
 
 /* Class = "UIButton"; normalTitle = "Create"; ObjectID = "wav-ia-iWa"; */
-"wav-ia-iWa.normalTitle" = "Create";
+"wav-ia-iWa.normalTitle" = "Créer";
 
 /* Class = "UITabBarItem"; title = "View"; ObjectID = "zG1-ka-olk"; */
-"zG1-ka-olk.title" = "View";
+"zG1-ka-olk.title" = "Vue";

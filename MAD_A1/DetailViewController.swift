@@ -16,6 +16,10 @@ class DetailViewController: UIViewController {
             self.contentLabel.text = contentText!
         }
     }
+    
+    @IBAction func unwindToRootViewController(segue: UIStoryboardSegue) {
+        print("Unwind to Root View Controller")
+    }
 
 
     /*

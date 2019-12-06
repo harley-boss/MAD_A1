@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3R3-aO-Cly">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3R3-aO-Cly">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -64,7 +64,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="QRp-L2-d6L"/>
                     </view>
-                    <navigationItem key="navigationItem" id="FAE-Fo-79L"/>
+                    <navigationItem key="navigationItem" id="FAE-Fo-79L">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="icons8-menu-52" id="JQA-ax-VG0">
+                            <connections>
+                                <segue destination="1RT-TX-Mqa" kind="show" id="C3o-4s-y40"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="addItemLabel" destination="dcL-QS-Odo" id="4xY-3M-Gzk"/>
                         <outlet property="listNameLabel" destination="NvB-In-nxq" id="FW4-EX-qg5"/>
@@ -125,7 +131,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="45E-qc-2D8"/>
                     </view>
-                    <navigationItem key="navigationItem" id="hXe-qs-IG0"/>
+                    <navigationItem key="navigationItem" id="hXe-qs-IG0">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="icons8-menu-52" id="Zek-ga-lGk">
+                            <connections>
+                                <segue destination="1RT-TX-Mqa" kind="show" id="Rng-Mr-u05"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="2bF-XX-6Dj" id="aqp-Ke-Rao"/>
                     </connections>
@@ -185,7 +197,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Jbr-nv-TbI"/>
                     </view>
-                    <navigationItem key="navigationItem" id="WAL-tx-kFw"/>
+                    <navigationItem key="navigationItem" id="WAL-tx-kFw">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="icons8-menu-52" id="xsq-He-EyS">
+                            <connections>
+                                <segue destination="1RT-TX-Mqa" kind="show" id="uGK-qL-v32"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="create" destination="wav-ia-iWa" id="N4y-CC-5YP"/>
                         <outlet property="listName" destination="l7Q-55-ofn" id="2b8-vE-hd8"/>
@@ -195,6 +213,38 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JJV-tJ-TF3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-381.60000000000002" y="654.42278860569718"/>
+        </scene>
+        <!--Camera-->
+        <scene sceneID="AXi-Wj-v6M">
+            <objects>
+                <viewController id="1RT-TX-Mqa" customClass="Camera" customModule="MAD_A1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hLM-aD-j3r">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ae2-kJ-cXp">
+                                <rect key="frame" x="141" y="145" width="93" height="30"/>
+                                <state key="normal" title="Camera"/>
+                                <connections>
+                                    <action selector="cameraClicked:" destination="1RT-TX-Mqa" eventType="touchUpInside" id="ye4-U2-BKV"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Ae2-kJ-cXp" firstAttribute="top" secondItem="7KI-c4-jph" secondAttribute="top" constant="122" id="Iua-ed-MpK"/>
+                            <constraint firstItem="Ae2-kJ-cXp" firstAttribute="leading" secondItem="7KI-c4-jph" secondAttribute="leading" constant="161" id="dFw-qP-NhA"/>
+                            <constraint firstItem="Ae2-kJ-cXp" firstAttribute="centerX" secondItem="hLM-aD-j3r" secondAttribute="centerX" id="nfg-wG-rh8"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="7KI-c4-jph"/>
+                    </view>
+                    <connections>
+                        <outlet property="btnCamera" destination="Ae2-kJ-cXp" id="k5z-Pg-gQN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xno-qb-fZa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="741.60000000000002" y="1485.6071964017992"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="tZq-cX-Bc0">
@@ -323,6 +373,10 @@
     <resources>
         <image name="icons8-add-list-30" width="30" height="30"/>
         <image name="icons8-create-30" width="30" height="30"/>
+        <image name="icons8-menu-52" width="52" height="52"/>
         <image name="icons8-view-30" width="30" height="30"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="uGK-qL-v32"/>
+    </inferredMetricsTieBreakers>
 </document>

@@ -13,6 +13,9 @@ class CreateListController: UIViewController {
     @IBOutlet weak var listName: UITextField!
     @IBOutlet weak var create: UIButton!
     @IBOutlet weak var listTitle: UILabel!
+    
+    
+    
     /*
      * Function : viewDidLoad
      * Description : On create lifecycle hook
@@ -29,9 +32,15 @@ class CreateListController: UIViewController {
         create.setTitle(NSLocalizedString("create", comment: "button text"), for: .normal)
     }
     
+    
+    
+    
     @objc func showKeyboard(textField: UITextField) {
         self.listName.becomeFirstResponder()
     }
+    
+    
+    
     
     /*
      * Function : createClicked

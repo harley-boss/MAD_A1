@@ -7,6 +7,7 @@
  */
 
 import UIKit
+import CoreData
 
 class CreateListController: UIViewController {
     
@@ -50,6 +51,20 @@ class CreateListController: UIViewController {
             self.listName.resignFirstResponder()
             GroceryList.sharedList.listName = listName.text!
             self.tabBarController?.selectedIndex = 1
+            
+            let appDelegate = UIApplication.shared.delegate as! AppDelegate
+            
+            let context = appDelegate.persistentContainer.viewContext
+            
+            let newItem = NSEntityDescription.insertNewObject(forEntityName: "Item", into: context)
+            
+            newItem.setValue(listName.text!, forKey: "listName")
+            
+            do{
+                try context.save()
+            }catch{
+                
+            }
             listName.text = ""
         }        
     }

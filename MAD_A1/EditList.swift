@@ -8,6 +8,7 @@
  */
 
 import UIKit
+import CoreData
 
 class EditListController: UIViewController, UITextFieldDelegate {
     
@@ -80,9 +81,38 @@ class EditListController: UIViewController, UITextFieldDelegate {
         if newItemStr == "" {
             return
         }
+        GroceryList.sharedList.addItem(newItemStr)
         textView?.text += (newItemStr + "\n")
         textView?.text += ("---------------------------------------\n")
         textField.text = ""
+        
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        
+        let context = appDelegate.persistentContainer.viewContext
+        
+        let request = NSFetchRequest<NSFetchRequestResult>(entityName: "Item")
+        request.returnsObjectsAsFaults = false
+        
+        do{
+            let results = try context.fetch(request)
+            
+            if results.count > 0 {
+                for result in results as! [NSManagedObject] {
+                    if let item = result.value(forKey: "listName") as? String{
+                        if(item==GroceryList.sharedList.listName){
+                            
+                            result.setValue(GroceryList.sharedList.getAllItems(), forKey: "itemList")
+                            try context.save()
+                            break
+                        }
+                        
+                    }
+                }
+                
+            }
+        }catch{
+            
+        }
     }
     
     /*

@@ -8,11 +8,12 @@
 */
 
 import UIKit
+import CoreData
 
 class ViewListController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     // Hard coded grocery lists for this iteration of the assignment
-    let groceryList = [GroceryList(0, "1", ["Orange", "Purple", "Blue"]), GroceryList(1, "2", ["Rice", "Beans", "Carrots", "Harley"]), GroceryList(1, "3", ["Buns", "Burgers", "Hot Dogs", "Harley"]), GroceryList(1, "4", ["Nathan", "Justin", "Spencer", "Harley"]), ]
+    var groceryList:[GroceryList] = []
     @IBOutlet weak var tableView: UITableView!
     
     /*
@@ -26,7 +27,46 @@ class ViewListController: UIViewController, UITableViewDataSource, UITableViewDe
         self.title = NSLocalizedString("view", comment: "")
         self.tableView.backgroundColor = .white
         self.tableView.tableFooterView = UIView()
+        
     }
+    
+    
+    /*
+     * Function : viewWillAppear
+     * Description : On view appear lifecycle hook, calls method that sets up list
+     * Paramaters : None
+     * Returns : None
+     */
+    override func viewWillAppear(_ animated: Bool) {
+        
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        
+        let context = appDelegate.persistentContainer.viewContext
+        
+        let request = NSFetchRequest<NSFetchRequestResult>(entityName: "Item")
+        request.returnsObjectsAsFaults = false
+        
+        do{
+            let results = try context.fetch(request)
+            
+            if results.count > 0 {
+                for result in results as! [NSManagedObject] {
+                    if let item = result.value(forKey: "listName") as? String{
+                        if let list = result.value(forKey: "itemList") as? [String] {
+                            groceryList.append(GroceryList(1, item, list))
+                        }else{
+                            groceryList.append(GroceryList(1, item, ["List", "From", "Core Data"]))
+                        }
+                        
+                    }
+                }
+                
+            }
+        }catch{
+            
+        }
+    }
+    
     
     /*
     * Function : tableView(_ tableView: UITableView, viewForHeaderInSection section: Int)

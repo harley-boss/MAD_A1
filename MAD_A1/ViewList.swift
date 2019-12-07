@@ -54,8 +54,6 @@ class ViewListController: UIViewController, UITableViewDataSource, UITableViewDe
                     if let item = result.value(forKey: "listName") as? String{
                         if let list = result.value(forKey: "itemList") as? [String] {
                             groceryList.append(GroceryList(1, item, list))
-                        }else{
-                            groceryList.append(GroceryList(1, item, ["List", "From", "Core Data"]))
                         }
                         
                     }

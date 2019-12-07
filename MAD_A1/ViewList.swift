@@ -50,6 +50,7 @@ class ViewListController: UIViewController, UITableViewDataSource, UITableViewDe
             let results = try context.fetch(request)
             
             if results.count > 0 {
+                groceryList.removeAll()
                 for result in results as! [NSManagedObject] {
                     if let item = result.value(forKey: "listName") as? String{
                         if let list = result.value(forKey: "itemList") as? [String] {
@@ -63,6 +64,7 @@ class ViewListController: UIViewController, UITableViewDataSource, UITableViewDe
         }catch{
             
         }
+        tableView.reloadData()
     }
     
     

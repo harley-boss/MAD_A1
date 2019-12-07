@@ -60,6 +60,7 @@ class CreateListController: UIViewController {
         if(!(listName.text?.isEmpty)!){
             self.listName.resignFirstResponder()
             GroceryList.sharedList.listName = listName.text!
+            GroceryList.sharedList.removeAllItems()
             self.tabBarController?.selectedIndex = 1
 			
 			let appDelegate = UIApplication.shared.delegate as! AppDelegate

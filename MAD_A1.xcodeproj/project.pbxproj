@@ -18,6 +18,9 @@
 		D6FE2E4B233AD5040042BAA7 /* CreateList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6FE2E4A233AD5040042BAA7 /* CreateList.swift */; };
 		D6FE2E4D233AD51A0042BAA7 /* GroceryList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6FE2E4C233AD51A0042BAA7 /* GroceryList.swift */; };
 		D830D779237DEEAA00A901E1 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D830D778237DEEAA00A901E1 /* DetailViewController.swift */; };
+		D839A8EE239C1B0D00231EAB /* Holiday.swift in Sources */ = {isa = PBXBuildFile; fileRef = D839A8ED239C1B0D00231EAB /* Holiday.swift */; };
+		D839A8F0239C1CE200231EAB /* HolidayRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D839A8EF239C1CE200231EAB /* HolidayRequest.swift */; };
+		D8AB6377239AD2B40094A850 /* HolidayTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8AB6376239AD2B40094A850 /* HolidayTableView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +40,9 @@
 		D6FE2E4A233AD5040042BAA7 /* CreateList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateList.swift; sourceTree = "<group>"; };
 		D6FE2E4C233AD51A0042BAA7 /* GroceryList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroceryList.swift; sourceTree = "<group>"; };
 		D830D778237DEEAA00A901E1 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		D839A8ED239C1B0D00231EAB /* Holiday.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Holiday.swift; sourceTree = "<group>"; };
+		D839A8EF239C1CE200231EAB /* HolidayRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HolidayRequest.swift; sourceTree = "<group>"; };
+		D8AB6376239AD2B40094A850 /* HolidayTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HolidayTableView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +77,9 @@
 			children = (
 				D6FE2E38233A97BF0042BAA7 /* AppDelegate.swift */,
 				D6FE2E3C233A97BF0042BAA7 /* Main.storyboard */,
+				D8AB6376239AD2B40094A850 /* HolidayTableView.swift */,
+				D839A8ED239C1B0D00231EAB /* Holiday.swift */,
+				D839A8EF239C1CE200231EAB /* HolidayRequest.swift */,
 				D6BCD790233E41CB00BE05EF /* icons8-list-64.png */,
 				D6FE2E3F233A97C00042BAA7 /* Assets.xcassets */,
 				D6FE2E41233A97C00042BAA7 /* LaunchScreen.storyboard */,
@@ -161,10 +170,13 @@
 			files = (
 				D6FE2E4D233AD51A0042BAA7 /* GroceryList.swift in Sources */,
 				D6BCD78F233E3F5000BE05EF /* ViewList.swift in Sources */,
+				D839A8EE239C1B0D00231EAB /* Holiday.swift in Sources */,
+				D839A8F0239C1CE200231EAB /* HolidayRequest.swift in Sources */,
 				D6FE2E39233A97BF0042BAA7 /* AppDelegate.swift in Sources */,
 				D830D779237DEEAA00A901E1 /* DetailViewController.swift in Sources */,
 				D6FE2E4B233AD5040042BAA7 /* CreateList.swift in Sources */,
 				D6BCD78D233E3F4200BE05EF /* EditList.swift in Sources */,
+				D8AB6377239AD2B40094A850 /* HolidayTableView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

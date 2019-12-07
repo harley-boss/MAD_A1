@@ -13,6 +13,11 @@ class CreateListController: UIViewController {
     @IBOutlet weak var listName: UITextField!
     @IBOutlet weak var create: UIButton!
     @IBOutlet weak var listTitle: UILabel!
+    
+    @IBOutlet weak var trailerConstraint: NSLayoutConstraint!
+    
+    var menuShown: Bool = false
+    
     /*
      * Function : viewDidLoad
      * Description : On create lifecycle hook
@@ -27,6 +32,7 @@ class CreateListController: UIViewController {
         
         listTitle.text = NSLocalizedString("nameList", comment: "list name")
         create.setTitle(NSLocalizedString("create", comment: "button text"), for: .normal)
+        self.trailerConstraint.constant = -150
     }
     
     @objc func showKeyboard(textField: UITextField) {
@@ -54,7 +60,23 @@ class CreateListController: UIViewController {
      * Paramaters : UITextField
      * Returns : None
      */
+    @IBAction func menuBarItemClicked(_ sender: Any){
+        self.trailerConstraint.constant = 0
+        self.menuShown = false
+    }
+    
     @IBAction func listNameChanged(_ sender: UITextField) {
         // Do validation in the future
+    }
+    @IBAction func menuButtonClicked(_ sender: Any) {
+        if (menuShown) {
+            trailerConstraint.constant = 0
+        } else {
+            trailerConstraint.constant = -150
+        }
+        UIView.animate(withDuration: 0.2, delay: 0.0, options: .curveEaseIn, animations: {
+            self.view.layoutIfNeeded()
+        })
+        menuShown = !menuShown
     }
 }

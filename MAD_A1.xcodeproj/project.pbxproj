@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3FF6825F239C64DD00DF5875 /* Item.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3FF6825D239C64DD00DF5875 /* Item.xcdatamodeld */; };
 		D604D6B8239C558F00A013AA /* CameraController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D604D6B7239C558F00A013AA /* CameraController.swift */; };
 		D604D6BA239C559B00A013AA /* MapController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D604D6B9239C559B00A013AA /* MapController.swift */; };
 		D649083B2379F60E00BBF397 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D649083D2379F60E00BBF397 /* Localizable.strings */; };
@@ -26,6 +27,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3FF6825E239C64DD00DF5875 /* Item.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Item.xcdatamodel; sourceTree = "<group>"; };
 		D604D6B7239C558F00A013AA /* CameraController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraController.swift; sourceTree = "<group>"; };
 		D604D6B9239C559B00A013AA /* MapController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapController.swift; sourceTree = "<group>"; };
 		D649083C2379F60E00BBF397 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -96,6 +98,7 @@
 				D830D778237DEEAA00A901E1 /* DetailViewController.swift */,
 				D604D6B7239C558F00A013AA /* CameraController.swift */,
 				D604D6B9239C559B00A013AA /* MapController.swift */,
+				3FF6825D239C64DD00DF5875 /* Item.xcdatamodeld */,
 			);
 			path = MAD_A1;
 			sourceTree = "<group>";
@@ -178,6 +181,7 @@
 				D6BCD78F233E3F5000BE05EF /* ViewList.swift in Sources */,
 				D839A8EE239C1B0D00231EAB /* Holiday.swift in Sources */,
 				D604D6BA239C559B00A013AA /* MapController.swift in Sources */,
+				3FF6825F239C64DD00DF5875 /* Item.xcdatamodeld in Sources */,
 				D839A8F0239C1CE200231EAB /* HolidayRequest.swift in Sources */,
 				D604D6B8239C558F00A013AA /* CameraController.swift in Sources */,
 				D6FE2E39233A97BF0042BAA7 /* AppDelegate.swift in Sources */,
@@ -397,6 +401,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		3FF6825D239C64DD00DF5875 /* Item.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				3FF6825E239C64DD00DF5875 /* Item.xcdatamodel */,
+			);
+			currentVersion = 3FF6825E239C64DD00DF5875 /* Item.xcdatamodel */;
+			path = Item.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = D6FE2E2D233A97BF0042BAA7 /* Project object */;
 }

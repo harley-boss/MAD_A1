@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D604D6B8239C558F00A013AA /* CameraController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D604D6B7239C558F00A013AA /* CameraController.swift */; };
+		D604D6BA239C559B00A013AA /* MapController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D604D6B9239C559B00A013AA /* MapController.swift */; };
 		D649083B2379F60E00BBF397 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = D649083D2379F60E00BBF397 /* Localizable.strings */; };
 		D6BCD78D233E3F4200BE05EF /* EditList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6BCD78C233E3F4200BE05EF /* EditList.swift */; };
 		D6BCD78F233E3F5000BE05EF /* ViewList.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6BCD78E233E3F5000BE05EF /* ViewList.swift */; };
@@ -24,6 +26,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D604D6B7239C558F00A013AA /* CameraController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraController.swift; sourceTree = "<group>"; };
+		D604D6B9239C559B00A013AA /* MapController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapController.swift; sourceTree = "<group>"; };
 		D649083C2379F60E00BBF397 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		D649083E2379F62800BBF397 /* fr-CA */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "fr-CA"; path = "fr-CA.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		D6BCD78C233E3F4200BE05EF /* EditList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditList.swift; sourceTree = "<group>"; };
@@ -90,6 +94,8 @@
 				D6BCD78E233E3F5000BE05EF /* ViewList.swift */,
 				D649083D2379F60E00BBF397 /* Localizable.strings */,
 				D830D778237DEEAA00A901E1 /* DetailViewController.swift */,
+				D604D6B7239C558F00A013AA /* CameraController.swift */,
+				D604D6B9239C559B00A013AA /* MapController.swift */,
 			);
 			path = MAD_A1;
 			sourceTree = "<group>";
@@ -171,7 +177,9 @@
 				D6FE2E4D233AD51A0042BAA7 /* GroceryList.swift in Sources */,
 				D6BCD78F233E3F5000BE05EF /* ViewList.swift in Sources */,
 				D839A8EE239C1B0D00231EAB /* Holiday.swift in Sources */,
+				D604D6BA239C559B00A013AA /* MapController.swift in Sources */,
 				D839A8F0239C1CE200231EAB /* HolidayRequest.swift in Sources */,
+				D604D6B8239C558F00A013AA /* CameraController.swift in Sources */,
 				D6FE2E39233A97BF0042BAA7 /* AppDelegate.swift in Sources */,
 				D830D779237DEEAA00A901E1 /* DetailViewController.swift in Sources */,
 				D6FE2E4B233AD5040042BAA7 /* CreateList.swift in Sources */,

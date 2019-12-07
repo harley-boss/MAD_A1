@@ -14,6 +14,7 @@ class CreateListController: UIViewController {
     @IBOutlet weak var create: UIButton!
     @IBOutlet weak var listTitle: UILabel!
     
+    @IBOutlet weak var btnCamera: UIButton!
     @IBOutlet weak var trailerConstraint: NSLayoutConstraint!
     
     var menuShown: Bool = false
@@ -33,6 +34,15 @@ class CreateListController: UIViewController {
         listTitle.text = NSLocalizedString("nameList", comment: "list name")
         create.setTitle(NSLocalizedString("create", comment: "button text"), for: .normal)
         self.trailerConstraint.constant = -150
+        
+        let hasCamera = UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.camera);
+        if (!hasCamera) {
+            btnCamera.isHidden = true
+        }
+    }
+    
+    @IBAction func showCamera() {
+        
     }
     
     @objc func showKeyboard(textField: UITextField) {

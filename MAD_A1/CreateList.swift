@@ -27,6 +27,7 @@ class CreateListController: UIViewController {
      * Returns : None
      */
     override func viewDidLoad() {
+        trailerConstraint.constant = -150
         super.viewDidLoad()
         listName.addTarget(self, action: #selector(showKeyboard), for: .touchDown)
         view.backgroundColor = UIColor(red: 90/255, green: 200/255, blue: 250/255, alpha: 1)
@@ -87,22 +88,21 @@ class CreateListController: UIViewController {
      * Returns : None
      */
     @IBAction func menuBarItemClicked(_ sender: Any){
-        self.trailerConstraint.constant = 0
-        self.menuShown = false
+        if (menuShown) {
+            trailerConstraint.constant = -150
+        } else {
+            trailerConstraint.constant = 0
+        }
+        UIView.animate(withDuration: 0.2, delay: 0.0, options: .curveEaseIn, animations: {
+            self.view.layoutIfNeeded()
+        })
+        menuShown = !menuShown
     }
     
     @IBAction func listNameChanged(_ sender: UITextField) {
         // Do validation in the future
     }
     @IBAction func menuButtonClicked(_ sender: Any) {
-        if (menuShown) {
-            trailerConstraint.constant = 0
-        } else {
-            trailerConstraint.constant = -150
-        }
-        UIView.animate(withDuration: 0.2, delay: 0.0, options: .curveEaseIn, animations: {
-            self.view.layoutIfNeeded()
-        })
-        menuShown = !menuShown
+        
     }
 }
